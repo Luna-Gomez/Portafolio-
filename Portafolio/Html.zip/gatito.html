@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>TACON DE GATITO</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>TACON DE GATITO</h1>
+        <nav>
+            <ul class="menu">
+                <li><a href="index.html">Inicio</a></li>
+                <li class="dropdown">
+                    <a href="#">Categorias</a>
+                    <ul class="submenu">
+                        <li><a href="aguja.html">Tacon de aguja</a></li>
+                        <li><a href="plataforma.html">Tacon de plataforma</a></li>
+                        <li><a href="gatito.html">Tacon de gatito</a></li>
+                    </ul>
+                </li>
+                <li><a href="formulario.html">Escribenos</a></li>
+                <li><button class="cart">🛒 Ver Carrito</button></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="relleno">
+        <article>
+            <p>Tacones cortos y delgados, generalmente de menos de 5 cm. Ideales para estilo y comodidad.</p>
+        </article>
+    </section>
+
+    <div id="cartPanel" style="display: none; position: fixed; right: 20px; top: 80px; background: white; border: 1px solid #ccc; padding: 20px; z-index: 1000; box-shadow: 0px 4px 8px rgba(0,0,0,0.2);">
+        <h3>Tu Carrito</h3>
+        <ul id="cartItems"></ul>
+    </div>
+
+    <div class="contenedor">
+        <div class="card">
+            <span class="discount">-15%</span>
+            <img src="2.jpeg" alt="Tacón Korra">
+            <div class="tag">Gatito</div>
+            
+            <p class="old-price">$ 250.000</p>
+            <p class="price">$ 212.500</p>
+            <p class="title">Tacón Stiletto Korra</p>
+
+            <div class="actions">
+                <div class="quantity">
+                    <button class="minus">-</button>
+                    <span class="count">1</span>
+                    <button class="plus">+</button>
+                </div>
+                <button class="add">🛒</button>
+            </div>
+        </div>
+
+        <div class="card">
+            <span class="discount">-10%</span>
+            <img src="11.webp" alt="Tacón Holly">
+            <div class="tag">Cuero</div>
+            
+            <p class="old-price">$ 220.000</p>
+            <p class="price">$ 198.000</p>
+            <p class="title">Tacones Holly Negro</p>
+
+            <div class="actions">
+                <div class="quantity">
+                    <button class="minus">-</button>
+                    <span class="count">1</span>
+                    <button class="plus">+</button>
+                </div>
+                <button class="add">🛒</button>
+            </div>
+        </div>
+
+        <div class="card">
+            <span class="discount">-20%</span>
+            <img src="5.webp" alt="Tacón Killer">
+            <div class="tag">Premium</div>
+            
+            <p class="old-price">$ 300.000</p>
+            <p class="price">$ 240.000</p>
+            <p class="title">Tacones Killer Vaca</p>
+
+            <div class="actions">
+                <div class="quantity">
+                    <button class="minus">-</button>
+                    <span class="count">1</span>
+                    <button class="plus">+</button>
+                </div>
+                <button class="add">🛒</button>
+            </div>
+        </div>
+    </div>
+
+    <footer id="contacto">
+        <p>&copy; MIMIMI TACONES LOS MEJORES PARA TI.</p>
+        <address>
+            Contacto: <a href="mailto:MIMIMI@gmail.com">mimimi@gmail.com</a>
+        </address>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

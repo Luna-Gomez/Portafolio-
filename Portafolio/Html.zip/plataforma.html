@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>TACÓN DE PLATAFORMA | MIMIMI</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header>
+    <h1>MIMIMI</h1>
+    <nav>
+        <ul class="menu">
+            <li><a href="index.html">INICIO</a></li>
+            <li class="dropdown">
+                <a href="#">CATEGORÍAS</a>
+                <ul class="submenu">
+                    <li><a href="aguja.html">TACÓN DE AGUJA</a></li>
+                    <li><a href="plataforma.html">TACÓN DE PLATAFORMA</a></li>
+                    <li><a href="gatito.html">TACÓN DE GATITO</a></li>
+                </ul>
+            </li>
+            <li><a href="formulario.html">ESCRÍBENOS</a></li>
+            <li><button class="cart" onclick="toggleCart()">🛒 Ver Carrito</button></li>
+        </ul>
+    </nav>
+</header>
+    <div id="cartPanel" style="display: none;">
+        <h3>Tu Carrito</h3>
+        <ul id="cartItems"></ul>
+    </div>
+
+    <section class="relleno">
+        <article>
+            <p>Tacones con una suela gruesa en la parte delantera que eleva todo el pie, ofreciendo mayor estabilidad y altura.</p>
+        </article>
+    </section>
+
+    <div class="contenedor">
+        <div class="card">
+            <span class="discount">-30%</span>
+            <img src="3.jpeg" alt="Sandalia Celestina">
+            <div class="tag">Cuero</div>
+            <p class="old-price">$ 280.800</p>
+            <p class="price">$ 196.560</p>
+            <p class="title">Sandalia Celestina</p>
+            <div class="actions">
+                <div class="quantity">
+                    <button class="minus">-</button>
+                    <span class="count">1</span>
+                    <button class="plus">+</button>
+                </div>
+                <button class="add">🛒</button>
+            </div>
+        </div>
+
+        <div class="card">
+            <img src="4.webp" alt="Tacones Serena">
+            <div class="tag">Charol</div>
+            <p class="price">$ 210.000</p>
+            <p class="title">Tacones Serena Black</p>
+            <div class="actions">
+                <div class="quantity">
+                    <button class="minus">-</button>
+                    <span class="count">1</span>
+                    <button class="plus">+</button>
+                </div>
+                <button class="add">🛒</button>
+            </div>
+        </div>
+
+        <div class="card">
+            <img src="10.webp" alt="Stiletto Tandem">
+            <div class="tag">Plataforma Alta</div>
+            <p class="price">$ 320.000</p>
+            <p class="title">Stiletto Tandem</p>
+            <div class="actions">
+                <div class="quantity">
+                    <button class="minus">-</button>
+                    <span class="count">1</span>
+                    <button class="plus">+</button>
+                </div>
+                <button class="add">🛒</button>
+            </div>
+        </div>
+    </div>
+
+    <footer id="contacto">
+        <div class="divisor-visual"></div>
+        <p>&copy; MIMIMI TACONES LOS MEJORES PARA TI.</p>
+        <address>Contacto: <a href="mailto:MIMIMI@gmail.com">mimimi@gmail.com</a></address>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

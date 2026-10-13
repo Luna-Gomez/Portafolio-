@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MIMIMI | Boutique de Tacones</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header>
+    <h1>MIMIMI</h1>
+    <nav>
+        <ul class="menu">
+            <li><a href="index.html">INICIO</a></li>
+            <li class="dropdown">
+                <a href="#">CATEGORÍAS</a>
+                <ul class="submenu">
+                    <li><a href="aguja.html">TACÓN DE AGUJA</a></li>
+                    <li><a href="plataforma.html">TACÓN DE PLATAFORMA</a></li>
+                    <li><a href="gatito.html">TACÓN DE GATITO</a></li>
+                </ul>
+            </li>
+            <li><a href="formulario.html">ESCRÍBENOS</a></li>
+            <li><button class="cart" onclick="toggleCart()">🛒 Ver Carrito</button></li>
+        </ul>
+    </nav>
+</header>
+
+    <main>
+        <section class="galeria-destacada">
+            <section class="seccion-cuadros">
+                <div class="cuadro"><img src="3.jpeg" alt="Tacón destacado"></div>
+                <div class="cuadro"><img src="6.jpeg" alt="Tacón tendencia"></div>
+                <div class="cuadro"><img src="1.png" alt="Nuevo ingreso"></div>
+            </section>
+        </section>
+
+        <section class="relleno">
+            <article>
+                <h2>UN PAR PARA CADA ESTILO</h2>
+                <p>Escoger los tacones perfectos puede transformar por completo tu look. Conocer los distintos tipos de tacones te permitirá tomar decisiones acertadas en términos de comodidad y diseño.</p>
+            </article>
+        </section>
+
+        <section class="video-tutorial">
+            <h2>COMO CAMINAR EN TACONES</h2>
+            <video width="800" controls>
+                <source src="video.MP4" type="video/mp4">
+                Tu navegador no soporta videos.
+            </video>
+        </section>
+
+        <section class="seccion-testimonios">
+    <h2>Lo que dicen nuestras clientas</h2>
+    <div id="contenedor-testimonios" class="grilla-testimonios">
+        <p class="cargando">Cargando comentarios de la comunidad... 🎀</p>
+    </div>
+</section>
+
+        <section class="relleno">
+            <article>
+                <h2>NO SOLO SON TACONES, ES CONFIANZA EN CADA PASO</h2>
+                <p>Elegir correctamente el tacón no solo mejora la apariencia, sino que también influye en la comodidad y confianza al caminar.</p>
+            </article>
+        </section>
+    </main>
+
+    <footer id="contacto">
+        <div class="divisor-visual"></div>
+        <p>&copy; 2026 MIMIMI TACONES. LOS MEJORES PARA TI.</p>
+        <address>
+            Contacto: <a href="mailto:MIMIMI@gmail.com">mimimi@gmail.com</a>
+        </address>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

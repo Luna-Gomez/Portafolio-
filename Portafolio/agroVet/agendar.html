@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<title>Agendar cita</title>
+<link rel="stylesheet" href="style.css">
+
+</head>
+
+<body class="agendar">
+        <nav>
+<ul>
+     <li><a href="inicio.html">inicio</a></li>
+<li><a href="agendar.html">Agendar cita</a></li>
+<li><a href="veterinaria.html">Tienda</a></li>
+<li><a href="calcular.html">Calcular</a></li>
+<li><a href="calificanos.html">Calificanos</a></li>
+</ul>
+</nav>
+<h1>Agendar cita</h1>
+
+<div class="form-container">
+
+<form action="#" method="POST" enctype="multipart/form-data">
+ 
+            <input type="text" name="nombre" placeholder="Nombre de la mascota" required>
+            <input type="email" name="correo" placeholder="Correo electrónico" required>
+            <input type="tel" name="telefono" placeholder="Número telefónico">
+ 
+            <label style="display:block; text-align:left; margin-left:10px; font-size:12px;">Fecha de la cita:</label>
+            <input type="date" name="fecha">
+ 
+            <select name="motivo" style="width:100%; margin:10px 0; padding:10px; border-radius:10px; border:none;">
+                <option value="" disabled selected>¿Cuál es el motivo de tu cita?</option>
+                <option value="Consulta">Consulta general</option>
+                <option value="vacunas">Vacunacion</option>
+                <option value="cequeos">Chequeos medicos</option>
+                <option value="Asesoria">Asesoria en nutricion</option>
+                <option value="Otros">Otros</option>
+                
+            </select>
+ 
+            <label style="display:block; text-align:left; margin-left:10px; font-size:12px;">Sube una foto del carnet de vacunación de tu mascota
+                :</label>
+            <input type="file" name="archivo" accept="image/*">
+ 
+            
+ 
+            <div style="text-align:left; margin:10px;">
+                <input type="checkbox" id="terminos" name="terminos" required style="width:auto;">
+                <label for="terminos" style="font-size:12px;">Acepto el manejo de la informacion</label>
+            </div>
+            <div class="grupo-input">
+                <p style="text-align:left; font-size:14px; margin-bottom:10px;">¿Cómo nos conociste?</p>
+                <label><input type="radio" name="origen" value="instagram"> Instagram</label>
+                <label><input type="radio" name="origen" value="amigo"> Un amigo</label>
+                <label><input type="radio" name="origen" value="publicidad"> Publicidad</label>
+            </div>
+ 
+           <div class="grupo-input">
+    <label>Nivel de urgencia de la consulta:</label><br>
+
+    <input type="range" name="urgencia" min="1" max="3" step="1"
+        oninput="valorUrgencia.value = this.value">
+
+    <p>
+        <output id="valorUrgencia">2</output>
+        (1 = Baja, 2 = Media, 3 = Alta)
+    </p>
+</div>
+ 
+            <div class="grupo-input">
+                <p style="text-align:left; font-size:14px; margin-bottom:10px;">¿Qué tipo de atención prefieres?</p>
+                <label><input type="checkbox" name="estilo" value="rapida"> Atención rápida</label>
+                <label><input type="checkbox" name="estilo" value="detallada"> Atención detallada</label>
+                <label><input type="checkbox" name="domicilio" value="fiesta"> Servicio a domicilio</label>
+            </div>
+            <button type="submit">Agendar cita</button>
+        </form>
+
+</div>
+
+<footer>
+ portal de tecnologia © 2026  contacto: agroVet2026@hotmail.com
+</footer>
+
+</body>
+</html>

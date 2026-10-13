@@ -1,0 +1,580 @@
+/* =========================================
+   CAPITULOS 2 Y 10
+   ========================================= */
+@import url("styles-extra.css"); /*2.1.1*/
+
+* {
+    box-sizing: border-box; /*10.1.2*/
+}
+
+html {
+    font-size: 16px;
+}
+
+/* =========================================
+   CAPITULOS 3, 4, 7 Y 9
+   ========================================= */
+body {/*3.1.2*/
+    margin: 0; /*9.1.2*/
+    font-family: 'Helvetica Neue', Arial, sans-serif; /*7.1.3*/
+    background-color: #fcfcfc;
+    text-align: center;
+    color: #333; /*4.1.11*/
+}
+
+/* =========================================
+CAPITULOS 5, 6, 8, 9 Y 11
+   ========================================= */
+header {
+    background: white; /*5.1.1*/
+    padding: 15px 50px; /*9.1.1*/
+    display: flex; /*11.1.2*/
+    align-items: center;
+    justify-content: flex-end;
+    border-bottom: 1px solid #eee; /*8.1.4*/
+    position: sticky; /*11.1.6*/
+    top: 0;
+    z-index: 1000;
+    min-height: 70px; /*6.1.1*/
+}
+
+/* =========================================
+CAPITULOS 3, 5, 7 Y 11
+   ========================================= */
+header h1 { /*3.1.6*/
+    color: #ffb6c1; /*5.1.2*/
+    margin: 0;
+    font-size: 32px;
+    letter-spacing: 5px; /*7.1.11*/
+    font-weight: bold;
+    text-transform: uppercase; /*7.1.10*/
+    position: absolute; /*11.1.6*/
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+/* =========================================
+CAPITULOS 3, 4, 7 Y 11
+   ========================================= */
+.menu { /*3.1.4*/
+    list-style: none; /*7.1.12*/
+    display: flex; /*11.1.2*/
+    align-items: center;
+    gap: 20px; /*11.1.3*/
+    margin: 0;
+    padding: 0;
+}
+
+.menu a {
+    text-decoration: none; /*7.1.9*/
+    color: #444;
+    font-size: 13px;
+    text-transform: uppercase;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.menu a:hover { /*4.1.10*/
+    color: #ffb6c1;
+}
+
+/* =========================================
+CAPITULOS 1, 4, 5, 8 Y 11
+   ========================================= */
+.dropdown {
+    position: relative; /*11.1.6*/
+}
+
+.submenu {
+    display: none; /*11.1.7*/
+    position: absolute;
+    background: white;
+    top: 100%;
+    right: 0;
+    padding: 15px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1); /*5.1.5*/
+    border-radius: 10px; /*8.1.6*/
+    min-width: 180px;
+    list-style: none;
+}
+
+.dropdown:hover .submenu { /*4.1.10*/
+    display: block; /*11.1.4*/
+}
+
+.submenu li {
+    text-align: right;
+    margin: 8px 0;
+}
+
+/* =========================================
+CAPITULOS 6, 8, 9, 10 Y 11
+   ========================================= */
+.contenedor {
+    width: calc(100% - 40px); /*10.1.4*/
+    display: grid; /*11.1.5*/
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 30px;
+    padding: 50px;
+    max-width: 1200px;
+    margin: 0 auto; /*9.1.3*/
+}
+
+.card {
+    background: #ffe4e8;
+    border-radius: 20px;
+    padding: 25px;
+    position: relative;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.05);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transition: transform 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+}
+
+.card img { /*6.1.7*/
+    width: 100%;
+    height: 220px;
+    object-fit: contain;
+    background-color: white;
+    border-radius: 15px;
+    margin-bottom: 15px;
+}
+
+.discount {
+    position: absolute; /*11.1.6*/
+    top: 15px;
+    left: 15px;
+    background: #ff4d6d;
+    color: white;
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-size: 12px;
+    font-weight: bold;
+}
+
+.tag {
+    font-size: 13px;
+    color: #888;
+    margin-top: 10px;
+}
+
+.tag {
+    font-size: 0.9em;
+}
+
+.old-price {
+    text-decoration: line-through;
+    color: #aaa;
+    font-size: 14px;
+    margin: 5px 0;
+}
+
+.price {
+    color: #ff4d6d;
+    font-size: 22px;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.title {
+    font-weight: bold;
+    font-size: 16px;
+    margin-bottom: 15px;
+}
+
+
+.title {
+    font-size: 1.2rem; /*10.1.2*/
+}
+
+
+
+/* =========================================
+CAPITULOS 5, 8 Y 11
+   ========================================= */
+.actions {
+    display: flex;
+    flex-direction: column; /*11.1.2*/
+    align-items: center; /*11.1.3*/
+    gap: 12px;
+}
+
+.quantity {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    background: white;
+    padding: 5px 15px;
+    border-radius: 20px;
+    border: 1px solid #ffb6c1;
+}
+
+.quantity button {
+    border: none;
+    background: none; /*8.1.1.*/
+    cursor: pointer;
+    font-size: 18px;
+    color: #ffb6c1;
+    font-weight: bold;
+}
+
+.add {
+    background-color: #ffb6c1;
+    color: white;
+    border: none;
+    width: 45px;
+    height: 45px;
+    border-radius: 50%; /*8.1.7*/
+    cursor: pointer;
+    font-size: 20px;
+    transition: 0.3s;
+}
+
+.add:hover {
+    background-color: #ff8da1;
+}
+
+/* =========================================
+CAPITULOS 3, 4, 5, 6 Y 11
+   ========================================= */
+.cart {
+    background-color: #ffb6c1;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 20px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+#cartPanel { /*3.1.5*/
+    position: absolute;
+    right: 50px;
+    top: 75px;
+    background: white;
+    width: 320px;
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+    z-index: 2000; /*4.1.1*/
+    display: none; /*11.1.7*/
+    overflow: hidden; /*6.1.1*/
+    text-align: left;
+}
+
+#cartPanel h3 {
+    background-color: #ffb6c1;
+    color: white;
+    margin: 0;
+    padding: 15px;
+}
+
+#cartItems {
+    list-style: none;
+    padding: 15px;
+    margin: 0;
+}
+
+/* =========================================
+CAPITULOS 3, 4, 6, 9, 10 Y 11
+   ========================================= */
+.seccion-cuadros {
+    background-color: #ffb6c1;
+    padding: 40px;
+    margin: 40px auto; /*9.1.3*/
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    max-width: 900px;
+    border-radius: 40px;
+
+    .seccion-cuadros {
+        min-height: 50vh; /*10.1.3*/
+    }
+}
+
+.cuadro {
+    width: 200px;
+    height: 200px;
+    background-color: white;
+    border-radius: 25px;
+    overflow: hidden;
+}
+
+.cuadro img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+#contacto { /*3.1.5*/
+    clear: both; /*11.1.1*/
+    margin-top: 60px;
+    padding-bottom: 40px;
+}
+
+.divisor-visual {
+    background-color: #ffb6c1;
+    height: 15px;
+    margin-bottom: 25px;
+}
+
+.input-container {
+    text-align: left;
+    width: 100%;
+}
+
+.input-container label {
+    font-size: 12px;
+    margin-left: 5px;
+    color: #888;
+}
+
+.select-personalizado {
+    margin: 10px 0;
+    cursor: pointer;
+}
+
+.opciones-check {
+    text-align: left;
+    margin: 15px 0;
+    font-size: 13px;
+}
+
+.opciones-check input {
+    width: auto !important;
+    margin-right: 10px;
+}
+
+.grupo-input {
+    text-align: left;
+    margin-bottom: 20px;
+    background: #fff9fa;
+    padding: 15px;
+    border-radius: 15px;
+}
+
+.grupo-input p {
+    margin: 0 0 10px 0;
+    font-weight: bold;
+    font-size: 14px;
+}
+
+.grupo-input label {
+    margin-right: 15px;
+    font-size: 13px;
+}
+
+.grupo-input input[type="radio"],
+.grupo-input input[type="checkbox"] {
+    width: auto !important;
+}
+
+/* =========================================
+CAPITULOS 3, 4, 6, 10 Y 11
+   ========================================= */
+
+/* Selector de atributo */
+input[type="radio"] {
+    accent-color: #ffb6c1;
+}
+
+/* Visibility */
+.oculto {
+    visibility: hidden; /*11.1.7*/
+}
+
+/* Media query */
+@media (max-width: 768px) { /*10.1.6*/
+    .contenedor {
+        grid-template-columns: 1fr;
+    }
+}
+
+.title {
+    color: #ff4d6d !important;
+}
+
+.contenedor-principal-formulario {
+    display: flex;
+    justify-content: center;
+    padding: 50px 20px;
+}
+
+.recuadro-formulario {
+    background: white;
+    width: 100%;
+    max-width: 700px;
+    padding: 40px;
+    border-radius: 30px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+    border: 1px solid #ffe4e8;
+    text-align: left;
+}
+
+.recuadro-formulario h2 {
+    margin-bottom: 10px;
+}
+
+.subtitulo-formulario {
+    color: #888;
+    font-size: 14px;
+    margin-bottom: 30px;
+}
+
+.fila-inputs {
+    display: flex;
+    gap: 15px;
+    margin-bottom: 15px;
+}
+
+/* Estilo para todos los inputs de texto, email, tel, date y select */
+.recuadro-formulario input[type="text"],
+.recuadro-formulario input[type="email"],
+.recuadro-formulario input[type="tel"],
+.recuadro-formulario input[type="date"],
+.recuadro-formulario select,
+.recuadro-formulario textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ffb6c1;
+    border-radius: 10px;
+    margin-bottom: 15px;
+    font-family: inherit;
+}
+
+.recuadro-formulario textarea {
+    resize: none; /*6.1.1*/
+}
+
+.input-group-label label {
+    display: block;
+    margin-bottom: 5px;
+    font-size: 14px;
+}
+
+.opciones-check {
+    margin: 15px 0;
+}
+
+.grupo-radio-check {
+    margin-bottom: 20px;
+}
+
+.grupo-radio-check p {
+    margin: 0 0 10px 0;
+    font-weight: bold;
+}
+
+.grupo-radio-check label {
+    margin-right: 15px;
+}
+
+.boton-enviar {
+    width: 100%;
+    padding: 15px;
+    background-color: #ffb6c1;
+    color: white;
+    border: none;
+    border-radius: 20px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.boton-enviar:hover {
+
+    background-color: #ff8da1;
+}
+
+  /*TESTIMONIOS*/
+
+.seccion-testimonios {
+    padding: 60px 20px;
+    text-align: center;
+    background-color: #fff9fa;
+}
+
+.seccion-testimonios h2 {
+    color: #ff4d6d;
+    margin-bottom: 40px;
+    letter-spacing: 2px;
+}
+
+.grilla-testimonios {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 25px;
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+/* Contenedor de la tarjeta */
+.tarjeta-api-cliente {
+    background: #ffffff;
+    border: 1px solid #ffe4e8;
+    border-radius: 20px;
+    padding: 30px 20px;
+    box-shadow: 0 10px 25px rgba(255, 182, 193, 0.15);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transition: transform 0.3s ease;
+}
+
+.tarjeta-api-cliente:hover {
+    transform: translateY(-5px);
+}
+
+/* Control absoluto de la foto para que permanezca redonda sin estirarse */
+.tarjeta-api-cliente img.foto-api-cliente {
+    width: 100px !important;
+    height: 100px !important;
+    border-radius: 50% !important;
+    object-fit: cover !important;
+    margin-bottom: 15px !important;
+    border: 3px solid #ffe4e8 !important;
+    background-color: transparent !important;
+}
+
+/* Nombre de la persona */
+.nombre-api-cliente {
+    font-size: 1.1rem;
+    color: #ff4d6d;
+    font-weight: bold;
+    margin: 0 0 5px 0;
+}
+
+/* Ubicación del país */
+.pais-api-cliente {
+    color: #888;
+    font-weight: 600;
+    margin-bottom: 15px;
+    display: inline-block;
+}
+
+/* Cuerpo de texto del comentario */
+.texto-api-cliente {
+    font-size: 14px;
+    color: #555;
+    font-style: italic;
+    line-height: 1.5;
+    margin: 0;
+}
+
+/* Fila de estrellas decorativas */
+.estrellas-api-cliente {
+    margin-top: 15px;
+    font-size: 14px;
+}
+
+.cargando {
+    color: #aaa;
+    font-style: italic;
+    grid-column: 1 / -1;
+}

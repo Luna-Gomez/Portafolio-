@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>ESCRÍBENOS | MIMIMI</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <h1>MIMIMI</h1>
+        <nav>
+            <ul class="menu">
+                <li><a href="index.html">INICIO</a></li>
+                <li class="dropdown">
+                    <a href="#">CATEGORÍAS</a>
+                    <ul class="submenu">
+                        <li><a href="aguja.html">TACÓN DE AGUJA</a></li>
+                        <li><a href="plataforma.html">TACÓN DE PLATAFORMA</a></li>
+                        <li><a href="gatito.html">TACÓN DE GATITO</a></li>
+                    </ul>
+                </li>
+                <li><a href="formulario.html">ESCRÍBENOS</a></li>
+                <li><button class="cart">🛒 Ver Carrito</button></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="contenedor-principal-formulario">
+        <section class="recuadro-formulario">
+            <h2>ESCRIBENOS</h2>
+            <p class="subtitulo-formulario">DÉJANOS TU COMENTARIO</p>
+
+<form id="miFormulario" action="#" method="POST" enctype="multipart/form-data">                
+                <div class="fila-inputs">
+                    <input type="text" name="nombre" placeholder="Nombre completo" required>
+                    <input type="email" name="correo" placeholder="Correo electrónico" required>
+                </div>
+
+                <input type="tel" name="telefono" placeholder="Número telefónico" class="input-full">
+
+                <div class="input-group-label">
+                    <label>Fecha de interés:</label>
+                    <input type="date" name="fecha">
+                </div>
+
+                <select name="motivo" class="select-personalizado">
+                    <option value="" disabled selected>¿Cuál es el motivo de tu mensaje?</option>
+                    <option value="compra">Duda sobre una compra</option>
+                    <option value="stock">Pregunta sobre inventario</option>
+                    <option value="otro">Otro</option>
+                </select>
+
+                <div class="input-group-label">
+                    <label>Sube una referencia (opcional):</label>
+                    <input type="file" name="archivo" accept="image/*">
+                </div>
+
+                <textarea name="comentario" placeholder="Escribe tu comentario aquí..." rows="4"></textarea>
+
+                <div class="opciones-check">
+                    <input type="checkbox" id="terminos" name="terminos" required>
+                    <label for="terminos">Acepto los términos y condiciones</label>
+                </div>
+
+                <div class="grupo-radio-check">
+                    <p>¿Cómo nos conociste?</p>
+                    <label><input type="radio" name="origen" value="instagram"> Instagram</label>
+                    <label><input type="radio" name="origen" value="amigo"> Un amigo</label>
+                    <label><input type="radio" name="origen" value="publicidad"> Publicidad</label>
+                </div>
+
+                <div class="grupo-radio-check">
+                    <label>Presupuesto estimado:</label>
+                    <input type="range" name="presupuesto" min="0" max="700000" step="10" oninput="this.nextElementSibling.value = this.value">
+                    <output>300000</output><span> pesos</span>
+                </div>
+
+                <div class="grupo-radio-check">
+                    <p>¿Qué estilos te gustan?</p>
+                    <label><input type="checkbox" name="estilo" value="elegante"> Elegante</label>
+                    <label><input type="checkbox" name="estilo" value="casual"> Casual</label>
+                    <label><input type="checkbox" name="estilo" value="fiesta"> Fiesta</label>
+                </div>
+
+                <button type="submit" class="boton-enviar">Enviar comentario</button>
+            </form>
+        </section>
+    </main>
+
+    <footer id="contacto">
+        <div class="divisor-visual"></div>
+        <p>© MIMIMI TACONES LOS MEJORES PARA TI.</p>
+        <p>Contacto: <a href="mailto:mimimi@gmail.com">mimimi@gmail.com</a></p>
+    </footer>
+    <script src="script.js"></script>
+
+</body>
+</html>

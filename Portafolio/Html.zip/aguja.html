@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TACÓN DE AGUJA | MIMIMI</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header>
+    <h1>MIMIMI</h1>
+    <nav>
+        <ul class="menu">
+            <li><a href="index.html">INICIO</a></li>
+            <li class="dropdown">
+                <a href="#">CATEGORÍAS</a>
+                <ul class="submenu">
+                    <li><a href="aguja.html">TACÓN DE AGUJA</a></li>
+                    <li><a href="plataforma.html">TACÓN DE PLATAFORMA</a></li>
+                    <li><a href="gatito.html">TACÓN DE GATITO</a></li>
+                </ul>
+            </li>
+            <li><a href="formulario.html">ESCRÍBENOS</a></li>
+            <li><button class="cart" onclick="toggleCart()">🛒 Ver Carrito</button></li>
+        </ul>
+    </nav>
+</header>
+
+    <div id="cartPanel" style="display: none;">
+        <h3>Tu Carrito</h3>
+        <ul id="cartItems"></ul>
+    </div>
+
+    <section class="relleno">
+        <article>
+            <p>Tacones finos y altos que se caracterizan por su forma delgada y elegante. Generalmente miden entre 7 y 13 centímetros, ayudan a estilizar la figura y alargar visualmente las piernas.</p>
+        </article>
+    </section>
+
+    <div class="contenedor">
+        <div class="card">
+            <span class="discount">-15%</span>
+            <img src="1.png" alt="Tacón de Aguja 1">
+            <div class="tag">Charol Black</div>
+            <p class="old-price">$ 290.000</p>
+            <p class="price">$ 246.500</p>
+            <p class="title">Stiletto Elegance</p>
+            <div class="actions">
+                <div class="quantity">
+                    <button class="minus">-</button>
+                    <span class="count">1</span>
+                    <button class="plus">+</button>
+                </div>
+                <button class="add">🛒</button>
+            </div>
+        </div>
+
+        <div class="card">
+            <span class="discount">-20%</span>
+            <img src="9.webp" alt="Tacón de Aguja 2">
+            <div class="tag">Cuero Premium</div>
+            <p class="old-price">$ 350.000</p>
+            <p class="price">$ 280.000</p>
+            <p class="title">Holly Leather High</p>
+            <div class="actions">
+                <div class="quantity">
+                    <button class="minus">-</button>
+                    <span class="count">1</span>
+                    <button class="plus">+</button>
+                </div>
+                <button class="add">🛒</button>
+            </div>
+        </div>
+
+        <div class="card">
+            <img src="7.jpeg" alt="Tacón de Aguja 3">
+            <div class="tag">Tendencia</div>
+            <p class="price">$ 210.000</p>
+            <p class="title">Mule Charol Red</p>
+            <div class="actions">
+                <div class="quantity">
+                    <button class="minus">-</button>
+                    <span class="count">1</span>
+                    <button class="plus">+</button>
+                </div>
+                <button class="add">🛒</button>
+            </div>
+        </div>
+    </div>
+
+    <footer id="contacto">
+        <div class="divisor-visual"></div>
+        <p>&copy; 2026 MIMIMI TACONES. LOS MEJORES PARA TI.</p>
+        <address>
+            Contacto: <a href="mailto:MIMIMI@gmail.com">mimimi@gmail.com</a>
+        </address>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
